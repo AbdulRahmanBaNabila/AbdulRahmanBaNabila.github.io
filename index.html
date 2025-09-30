@@ -1,12 +1,113 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>AbdulRahmanBaNabila</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <h1>Hello from GitHub Pages!</h1>
-    <p>This site now has custom CSS styling 🎉</p>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Abdulrahman Banabila — PhD @ Georgia Tech</title>
+  <meta name="description" content="Abdulrahman Banabila — PhD student in Computer Science at Georgia Tech, researching at the intersection of AI and Cybersecurity in Wenke Lee's lab." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="name">Abdulrahman Banabila</h1>
+      <p class="tagline">PhD in Computer Science · AI × Cybersecurity · Wenke Lee’s Lab, Georgia Tech</p>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#pubs">Publications</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About</h2>
+        <p>
+          I am a PhD student in the <strong>College of Computing</strong> at <strong>Georgia Tech</strong>, advised within
+          <strong>Prof. Wenke Lee’s</strong> group. My research sits at the intersection of <strong>machine learning</strong> and
+          <strong>security</strong>, with recent work on robust learning for autonomous systems and audio-based control/monitoring.
+        </p>
+        <p>
+          Before Georgia Tech, I spent four years as a researcher at the <strong>Technology Innovation Institute (TII)</strong> in the UAE,
+          working on ML for UAV security, anomaly detection, and adversarial audio. :contentReference[oaicite:1]{index=1}
+        </p>
+      </div>
+    </section>
+
+    <section id="research" class="section">
+      <div class="container">
+        <h2>Research</h2>
+        <ul class="bullets">
+          <li><strong>Robust representation learning</strong> for safety-critical autonomy (contrastive/self-supervised objectives such as SimCLR/MoCo) for anomaly detection in UAV flight. :contentReference[oaicite:2]{index=2}</li>
+          <li><strong>Audio-based control & verification</strong> for UAVs; studying failure modes and secure interfaces under noise and adversarial manipulation. :contentReference[oaicite:3]{index=3}</li>
+          <li><strong>Adversarial audio</strong> & generative attacks for condition monitoring and classification (GANs, zero-/few-shot evaluation). :contentReference[oaicite:4]{index=4}</li>
+          <li>Applied deep learning: spectrogram-based classification, LSTM/CNN pipelines, and embedded ML on Crazyflie AI-deck. :contentReference[oaicite:5]{index=5}</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="pubs" class="section">
+      <div class="container">
+        <h2>Publications</h2>
+        <ul class="pub-list">
+          <li>
+            <span class="pub-title">A Generative Adversarial Network-based Attack for Audio-based Condition Monitoring Systems</span>.
+            <span class="pub-venue">IEEE CCNC, 2023.</span> :contentReference[oaicite:6]{index=6}
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="container">
+        <h2>Experience</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Technology Innovation Institute (TII), UAE</h3>
+            <p class="role">Researcher / Associate Researcher — AI (2021–2024; 2024–present)</p>
+            <ul class="bullets">
+              <li>ML for UAV resiliency and security; anomaly detection via self-supervised objectives; audio-based control verification.</li>
+              <li>Hands-on with PyTorch/TensorFlow; GANs; LSTM/CNN; embedded workflows on Crazyflie.</li>
+            </ul>
+            <p class="fineprint">Selected projects and details summarized from CV. :contentReference[oaicite:7]{index=7}</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section">
+      <div class="container">
+        <h2>Education</h2>
+        <ul class="bullets">
+          <li><strong>MSc, Machine Learning</strong> — University College London (UCL). Thesis: Biologically inspired transformer architectures for visual navigation. :contentReference[oaicite:8]{index=8}</li>
+          <li><strong>BSc (Hons), Astrophysics</strong> — The University of Edinburgh (First Class). Thesis: Central black hole in the Milky Way. Ramsay Prize. :contentReference[oaicite:9]{index=9}</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:abn33@gatech.edu">abn33@gatech.edu</a></p>
+        <p>GitHub Pages: <a href="https://AbdulRahmanBaNabila.github.io">AbdulRahmanBaNabila.github.io</a></p>
+        <p>CV available upon request.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Abdulrahman Banabila</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
 </html>
